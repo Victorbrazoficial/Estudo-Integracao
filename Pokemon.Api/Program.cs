@@ -1,7 +1,6 @@
 using Pokemon.Application.UseCase;
 using Pokemon.Application.UseCase.IUseCase;
 using Pokemon.Infrastructure.HTTPClients.Services;
-using Pokemon.Infrastructure.Mappers;
 using Pokemon.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +13,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IBerriesUseCase, BerriesUseCase>();
 builder.Services.AddScoped<IBerriesServiceExternal, BerriesServiceExternal>();
-builder.Services.AddAutoMapper(typeof(BerriesMapper));
 
 var app = builder.Build();
 

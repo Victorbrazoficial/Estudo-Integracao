@@ -42,8 +42,8 @@ namespace Pokemon.Application.UseCase
                         {
                             Berry = new BerryResponse()
                             {
-                                Name = response.Berries.ElementAt(1).Berry.Name,
-                                url = response.Berries.ElementAt(1).Berry.Url
+                                Name = response.Berries.ElementAt(2).Berry.Name,
+                                url = response.Berries.ElementAt(2).Berry.Url
                             }
                         }
                     }
